@@ -160,7 +160,6 @@
       }
     ],
     "config": {
-      "background": "rgb(255,247,238)",
       "arc": {"fill": "#ab5787"},
       "area": {"fill": "#ab5787"},
       "line": {"stroke": "#ab5787"},

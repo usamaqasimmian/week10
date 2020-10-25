@@ -1,7 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "data": { "url": "https://raw.githubusercontent.com/usamaqasimmian/FIT3179/main/whale-populations.csv"},
-  "background" : "rgb(255,247,238)",
   "width": {"step": 35},
   "mark": "bar",
   "encoding": {
