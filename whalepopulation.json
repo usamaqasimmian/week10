@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": { "url": "https://raw.githubusercontent.com/usamaqasimmian/FIT3179/main/whale-populations.csv"},
+  "background" : "rgb(255,247,238)",
+  "width": {"step": 35},
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "Whale Type", "type": "ordinal", "spacing": 15
+    },
+    "y": {
+      "aggregate": "sum", "field": "Whale Population Rtio",
+      "title": "Whale population Ratio",
+      "axis": {"grid": false}
+    },
+    "x": {
+      "field": "Year",
+      "axis": {"title": ""}
+    },
+    "color": {
+      "field": "Year",
+      "scale": {"range": ["#004949","#009292"]}
+    },
+"tooltip": [{"field": "Whale Population Rtio", "type": "quantitative","title":"Whale Population"},
+{"field" :"Whale Type", "type" :"nominal" ,"title" : "Whale Type"},
+{"field": "Year", "type": "quantitative","title":"Year"}
+]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {"domainWidth": 1}
+  }
+
+}
